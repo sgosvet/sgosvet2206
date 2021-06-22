@@ -16,3 +16,9 @@ $ git add --all
 
 cmmii@DESKTOP-PQSC88S MINGW64 /c/ProyectoOSVET/pyawhere_test (master)
 $ git push -u origin master
+
+
+Configurar nuestro sitio en PythonAnywhere
+Vuelve al dashboard de PythonAnywhere haciendo click en el logo, y escoge la opción de iniciar una consola "Bash" – 
+esta terminal es como la que hay en tu ordenador, pero en el servidor de PythonAnywhere.
+
