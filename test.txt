@@ -22,3 +22,4 @@ Configurar nuestro sitio en PythonAnywhere
 Vuelve al dashboard de PythonAnywhere haciendo click en el logo, y escoge la opción de iniciar una consola "Bash" – 
 esta terminal es como la que hay en tu ordenador, pero en el servidor de PythonAnywhere.
 
+$ pa_autoconfigure_django.py --python=3.6 https://github.com/sgosvet/sgosvet2206.git
