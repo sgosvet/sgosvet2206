@@ -1,0 +1,21 @@
+{% load widget_tweaks %}
+<form method="POST" action="." enctype="multipart/form-data">
+    <div class="card card-default md-4">
+        <div class="card-header">
+            Contáctanos!
+        </div>
+        <div class="card-body">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="{{ action }}" /> {% for field in form.visible_fields %}
+            <div class="form-group">
+                <label for="text">{{ field.label }}</label>
+                <!-- utilizamos la lib tweaks -->
+                {{ field|add_class:'form-control'|attr:'autocomplete:off' }}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary btn-flat"><i class="fas fa-save"></i>Enviar</button>
+        </div>
+    </div>
+</form>
