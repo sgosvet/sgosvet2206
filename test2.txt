@@ -1,0 +1,25 @@
+Git - Secuencia de comandos:
+
+// Enlazar el repositorio Git en tu ordenador con el repositorio de GitHub.
+cmmii@DESKTOP-PQSC88S MINGW64 /c/ProyectoOSVET/pyawhere_test (master)
+$ git remote add origin https://github.com/sgosvet/sgosvet2206.git
+
+// Cuando hagas push a GitHub, te preguntará tu usuario y password de GitHub
+cmmii@DESKTOP-PQSC88S MINGW64 /c/ProyectoOSVET/pyawhere_test (master)
+$ git push -u origin master
+
+cmmii@DESKTOP-PQSC88S MINGW64 /c/ProyectoOSVET/pyawhere_test (master)
+$ git status
+
+cmmii@DESKTOP-PQSC88S MINGW64 /c/ProyectoOSVET/pyawhere_test (master)
+$ git add --all
+
+cmmii@DESKTOP-PQSC88S MINGW64 /c/ProyectoOSVET/pyawhere_test (master)
+$ git push -u origin master
+
+
+Configurar nuestro sitio en PythonAnywhere
+Vuelve al dashboard de PythonAnywhere haciendo click en el logo, y escoge la opción de iniciar una consola "Bash" – 
+esta terminal es como la que hay en tu ordenador, pero en el servidor de PythonAnywhere.
+
+$ pa_autoconfigure_django.py --python=3.6 https://github.com/sgosvet/sgosvet2206.git
